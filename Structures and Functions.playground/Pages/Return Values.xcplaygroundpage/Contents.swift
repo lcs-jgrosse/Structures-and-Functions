@@ -21,9 +21,21 @@ import Foundation
  Type the code that you see above. Then run the playground to try it out.
  */
 // Define the function here
+/// calculate the distance between two points in the karthesian plane
+///
+/// - Parameters:
+///   - fromX:  The ordinate (x-value) of the first point
+///   - fromY: The abszissa (y-value) of the first point
+///   - toX: The x-value of the second point
+///   - toY: THe y-value of the second point
+/// - Returns: The distance between the first and second point
 
+func distance(fromX: Double, fromY: Double, toX: Double, toY: Double) -> Double {
+    return sqrt(pow(fromX - toX, 2) + pow(fromY - toY, 2))
+}
 // Now invoke the function to calculate the distance between (0, 0) and (3, 4)
 // NOTE: Before you run the code, make a prediction about the distance between these two points.
+distance(fromX: 0, fromY: 0, toX: 3, toY: 4)
 
 /*:
  ### Documenting functions
